@@ -1,29 +1,29 @@
 #include <iostream>
+#include <conio.h>
 
 using namespace std;
 
 int main(){
-	
-	int tahun;
-	
-	cout<<"PROGRAM MENGETAHUI TAHUN KABISAT" <<endl;
-	cout<<"====================================";
-	
-	cout <<"\nINI TAHUN KABISAT, JIKA..... : \n"<<endl;
-	cout <<" * Tahun habis jika dibagi 4 "<<endl;
-	cout <<" * bukan tahun yang habis dibagi 100" <<endl;
-	cout <<" * tahun tidak habis dibagi 400" <<endl;
-	cout <<" * kecuali habis dibagi 100 & habis dibagi 400" <<endl;
-		
-		cout<<"\nMASUKAN TAHUN =  "<<endl;
-		cin >>tahun;
-		
-		if (tahun %4 ==0)
-		cout<<tahun<< " " <<"adalah tahun kabisat" << endl;
-		else
-		cout<<tahun<< " " <<"adalah bukan tahun kabisat" << endl;
-		system("pause");
-	
-		cin.get();
-		return 0;
+	cout <<"====================================================================";
+	cout <<"\nNAMA	: MUHAMMAD ALDO EFFENDY";
+	cout <<"\nKELAS	: TI.18.E1";
+	cout <<"\n====================================================================";
+	cout <<"\n\nPROGRAM MENCARI BILANGAN TERBESAR" <<endl;
+	int bil1, bil2, bil3, terbesar;
+	cout <<"Masukan bilangan pertama : ";
+	cin>>bil1;
+	cout <<"Masukan bilangan kedua : ";
+	cin>>bil2;
+	cout <<"Masukan bilangan ketiga : ";
+	cin>>bil3;
+
+	if(bil1 > bil2)
+		terbesar = bil1;
+	else
+		terbesar = bil2;
+	if(bil3 > terbesar)
+		terbesar = bil3;
+	cout<<"Bilangan terbesar = "<<terbesar;
+	cout<<"\n\nTERIMA KASIH :)";
+	getch();
 }
